@@ -97,16 +97,19 @@
     <div id="modal2" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('modal2')">&times;</span>
-            <h2>Escolta i Escriu 1</h2>
+            <h2>Escolta i Escriu </h2>
             <audio controls>
-                <source src="audio/El_temps_de_les_cireres_master.mp3" type="audio/mpeg">
+                <source src="/joc3/audio/dictats/1_dictat_dificil.mp3" type="audio/mpeg">
                 El teu navegador no suporta l'element d'àudio.
             </audio>
-            <input type="text" id="answer1" placeholder="Escriu la paraula...">
-            <button onclick="checkAnswer('answer1', 'correcte1')">Comprova</button>
+            <textarea id="answer1" placeholder="Escriu el dictat aquí..." rows="10" cols="50"></textarea>
+            <button onclick="checkAnswer('answer1', 'correcte1', 'correctAnswer')">Comprova</button>
             <p id="correcte1" class="hidden">Correcte!</p>
+            <p id="correctAnswer" class="hidden"></p>
         </div>
     </div>
+    
+    
 
     <div id="modal3" class="modal">
         <div class="modal-content">

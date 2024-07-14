@@ -271,3 +271,14 @@ button:hover {
     margin-top: 10px;
     box-sizing: border-box; /* Garanteix que el padding estigui inclòs en l'amplada total */
 }
+
+
+/* dictats */
+
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
