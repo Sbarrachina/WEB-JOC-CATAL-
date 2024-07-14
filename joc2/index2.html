@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joc del Penjat - Endevina paraules en català</title>
+  <link rel="stylesheet" href="/joc2/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Joc del Penjat</h1>
+    <p>Endevina paraules en català</p>
+    <button class="back-button"><a href="/index.html">Tornar a la pàgina principal</a></button>
+
+  </header>
+  
+  <div id="hangman">
+    <div id="word-container">
+      <!-- Aquí es mostrarà la paraula amb les lletres endevinades i les que falten -->
+    </div>
+    <div id="guesses">
+      <p>Introdueix una lletra:</p>
+      <input type="text" id="letter-input">
+      <button id="guess-button">Endevina</button>
+    </div>
+    <div id="hangman-display">
+      <!-- Aquí es mostrarà el dibuix del penjat i els intents restants -->
+    </div>
+    <div id="message">
+      <!-- Aquí es mostrarà el missatge de guanyar o perdre -->
+    </div>
+    <button id="reset-button">Reinicia el joc</button>
+  </div>
+  
+  <script src="/joc2/script.js"></script>
+</body>
+</html>

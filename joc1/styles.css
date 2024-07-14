@@ -1,0 +1,108 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding-top: 100px; /* Ajusta aquest valor segons sigui necessari per espaiar el contingut del header */
+  background-image: url("https://marketplace.canva.com/EAFhwfMq3ds/1/0/1600w/canva-colorful-cute-cats-illustration-desktop-wallpaper-KBBZLdpjLcM.jpg");
+  background-size: cover;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(240, 240, 240, 0.8); /* Fons semi-transparent per millorar la llegibilitat */
+  z-index: 1000; /* Assegura que el header estigui per sobre del tauler */
+}
+
+h1 {
+  margin: 0;
+  font-size: 50px;
+  color: #333;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px #000; /* Text en blanc amb vora negra */
+}
+
+.back-button {
+  background-color: #161718; /* Color de fons del botó */
+  color: white; /* Color del text del botó */
+  border: none; /* Sense contorn */
+  padding: 10px 20px; /* Espaiat interior del botó */
+  cursor: pointer; /* Cursor apuntador al passar per sobre */
+  text-decoration: none; /* Eliminar decoració d'enllaç */
+  border-radius: 5px; /* Arrodonir les vores */
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.back-button a {
+  color: #e6eaee; /* Color del text de l'enllaç dins del botó */
+  text-decoration: none; /* Eliminar decoració d'enllaç */
+}
+
+.back-button:hover {
+  background-color: #8bc34a; /* Color de fons del botó */
+  color: #161718;
+}
+
+#board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px; /* Ajusta l'amplada del tauler */
+  height: 600px; /* Ajusta l'alçada del tauler per acomodar les caselles més grans */
+  border: 2px solid #333;
+  background-color: #fff; /* Fons blanc */
+  margin-top: 150px; /* Espai per evitar que el tauler estigui sota el header */
+  padding: 5px; /* Espaiat intern per assegurar que el fons blanc cobreixi tota l'àrea */
+}
+
+.cell {
+  box-sizing: border-box;
+  width: 12.5%; /* Divideix el tauler en 8 columnes */
+  height: 25%; /* Divideix el tauler en 4 files */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px; /* Augmenta la mida de la lletra */
+  border: 1px solid #ccc;
+  text-transform: uppercase;
+  padding: 10px;
+  background-color: #fff; /* Fons blanc per a cada casella */
+}
+
+.start, .finish {
+  font-weight: bold;
+  background-color: #8bc34a;
+}
+
+.cell:hover {
+  background-color: #e0e0e0;
+}
+
+/* Estils per a la finestra emergent */
+.cell-popup {
+  font-size: 18px; /* Ajusta el tamany de la lletra per a les finestres emergents */
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  max-width: 300px;
+}
+
+@media (max-width: 1200px) {
+  #board {
+    width: 100%; /* Fer que el tauler ocupi tot l'ample disponible */
+    max-width: 960px; /* Amplada màxima del tauler */
+    height: auto; /* Alçada automàtica per acomodar les cel·les */
+  }
+
+  .cell {
+    width: 24.66%; /* Divideix el tauler en 8 columnes */
+    font-size: 20px; 
+  }
+}

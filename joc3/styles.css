@@ -1,0 +1,273 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-image: url("https://cdn.magicdecor.in/com/2023/02/29230525/image-1683286986-627.jpg");
+    background-size: cover;
+  }
+
+header {
+    color: rgb(16, 14, 14);
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+    text-transform:uppercase;
+    font-size: 40px;
+
+
+    margin-bottom: 10px;
+    background-color: rgba(240, 240, 240, 0.8); /* Fons semi-transparent per millorar la llegibilitat */
+   
+    
+}
+
+    
+
+
+.back-button {
+    background-color: #161718; /* Color de fons del botó */
+    color: white; /* Color del text del botó */
+    border: none; /* Sense contorn */
+    padding: 10px 20px; /* Espaiat interior del botó */
+    cursor: pointer; /* Cursor apuntador al passar per sobre */
+    text-decoration: none; /* Eliminar decoració d'enllaç */
+    border-radius: 5px; /* Arrodonir les vores */
+    text-transform: uppercase;
+    margin-top: -100px;
+}
+
+.back-button a {
+    color: rgb(12, 11, 11); /* Color del text de l'enllaç dins del botó */
+    text-decoration: none; /* Eliminar decoració d'enllaç */
+    color: #e6eaee;
+
+}
+
+.back-button:hover {
+  background-color: #8bc34a; /* Color de fons del botó */
+  color: #161718;
+}
+section {
+    margin: 80px 20px 20px 20px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 23px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    text-transform: uppercase;
+
+    
+}
+#cover-card{
+    background-image: url("https://img.freepik.com/vector-gratis/dia-libro-libros-texto_24911-115208.jpg");
+    background-size: cover;
+    height: 300px;
+
+}
+
+#cover-card2{
+    background-image: url("https://img.freepik.com/vector-gratis/nina-haciendo-tarea-libros-sobre-fondo-blanco_1308-104637.jpg");
+    background-size: cover;
+    height: 300px;
+
+
+}
+
+#cover-card3{
+    background-image: url("https://media.istockphoto.com/id/1469689441/es/vector/concepto-de-audiolibro.jpg?s=612x612&w=0&k=20&c=QHJwl3epAWlXmy1famroHmVHPOPxxpZtk3PkMDb_0MM=");
+    background-size: cover;
+    height: 300px;
+
+
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+#jocs h2{
+    text-transform: uppercase;
+    font-size: 60px;
+    text-align: center;
+    color: black; /* Color de la lletra */
+    text-shadow: -1px -1px 0 white,  
+                  1px -1px 0 white,
+                 -1px  1px 0 white,
+                  1px  1px 0 white; /* Vora blanca al text */
+    
+}
+#paraules h2{
+    text-transform: uppercase;
+    font-size: 60px;
+    text-align: center;
+
+    color: black; /* Color de la lletra */
+    text-shadow: -1px -1px 0 white,  
+                  1px -1px 0 white,
+                 -1px  1px 0 white,
+                  1px  1px 0 white; /* Vora blanca al text */
+    
+}
+
+
+.hidden {
+    display: none;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    border-radius: 8px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.covers {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.covers img {
+    width: 150px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.covers img:hover {
+    transform: scale(1.1);
+}
+
+.filters {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.filters button {
+    background-color: #101112;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+.filters button:hover {
+    background-color: #0056b3;
+}
+
+#wordList {
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+section {
+    margin: 80px 20px 20px 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+}
+
+.image-container {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Per assegurar que les imatges no desbordin */
+
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover; /* Assegura que l'imatge cobreixi tot l'espai del contenidor */
+
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    background-color: #131415;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color:  #8bc34a;
+}
+
+.image-container input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px; /* Augmenta la grandària de la font */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    box-sizing: border-box; /* Garanteix que el padding estigui inclòs en l'amplada total */
+}

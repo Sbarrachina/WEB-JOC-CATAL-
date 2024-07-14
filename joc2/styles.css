@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    background-image: url("https://www.eltemps.cat/imatges/articles/llengua-catalana-omnium-cultural.jpeg");
+    background-size: cover;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(240, 240, 240, 0.8); /* Fons semi-transparent per millorar la llegibilitat */
+    z-index: 1000; /* Assegura que el header estigui per sobre del tauler */
+  }
+  header h1 {
+    margin: 0;
+    font-size: 50px;
+    color: #333;
+    text-transform: uppercase;
+  }
+ 
+  .back-button {
+    background-color: #161718; /* Color de fons del botó */
+    color: white; /* Color del text del botó */
+    border: none; /* Sense contorn */
+    padding: 10px 20px; /* Espaiat interior del botó */
+    cursor: pointer; /* Cursor apuntador al passar per sobre */
+    text-decoration: none; /* Eliminar decoració d'enllaç */
+    border-radius: 5px; /* Arrodonir les vores */
+    text-transform: uppercase;
+}
+
+.back-button a {
+    color: rgb(12, 11, 11); /* Color del text de l'enllaç dins del botó */
+    text-decoration: none; /* Eliminar decoració d'enllaç */
+    color: #e6eaee;
+
+}
+
+.back-button:hover {
+  background-color: #8bc34a; /* Color de fons del botó */
+  color: #161718;
+}
+  
+  #hangman {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 160px;
+  }
+  
+  #word-container {
+    margin-bottom: 20px;
+    font-size: 60px;
+  }
+  
+  #guesses {
+    margin-bottom: 20px;
+  }
+  
+  #guesses p {
+    margin-bottom: 10px;
+    font-size: 25px;
+  }
+  
+  #letter-input {
+    padding: 5px;
+    font-size: 18px;
+  }
+  
+  #hangman-display {
+    margin-bottom: 20px;
+  }
+  
+  #message {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  #reset-button {
+    padding: 10px 20px;
+    background-color: #8bc34a;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  #reset-button:hover {
+    background-color: #689f38;
+  }
+  img {
+    width: 50%;
+    display: block; /* Assegura que la imatge es mostra com a bloc per gestionar millor el marges */
+    margin: 0 auto; /* Centra la imatge horitzontalment */
+  }
+  

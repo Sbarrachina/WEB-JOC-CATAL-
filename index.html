@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pàgina d'Inici</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="/index.html">Inici</a>
+        <a href="/joc1/index.html">Juguem amb el català</a>
+        <a href="/joc2/index2.html">Joc del Penjat</a>
+        <a href="/joc3/index3.html">EL so del català</a>
+    </div>
+
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slides active-slide">
+                <a href="/joc1/index.html"><img src="img/1-uguem amb el català.png" alt="Joc 1"></a>
+            </div>
+            <div class="slides">
+                <a href="/joc2/index2.html"><img src="img/2-joc del penjat.png" alt="Joc 2"></a>
+            </div>
+            <div class="slides">
+                <a href="/joc3/index3.html"><img src="img/el so del catala.png" alt="Joc 3"></a>
+            </div>
+        </div>
+        <div class="navigation">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 SBarrachina Code </p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

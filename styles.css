@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://wallpapers-clan.com/wp-content/uploads/2023/11/cool-vaporwave-art-desktop-wallpaper-cover.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+.navbar {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px; /* Espaiat interior de la barra de navegació */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    gap: 8px; /* Espacio entre elementos */
+}
+
+.navbar a {
+    color: white;
+    padding: 20px 8px; /* Modificar padding vertical y horizontal */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
+.navbar a:hover {
+    color: rgb(232, 21, 21); /* Color del text al fer hover */
+}
+.slider-container {
+    position: relative;
+    max-width: 900px;
+    margin:0  auto;
+    overflow: hidden;
+    padding: 80px;
+    
+   
+}
+.slider {
+    display: flex;
+    transition: transform 1s ease;
+}
+.slides {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+.slider img {
+    width: 100%;
+    height: auto;
+}
+.caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+.caption a {
+    color: #fff;
+    text-decoration: none;
+}
+.navigation {
+    position: absolute;
+    width: 90%;
+    bottom: 25px;
+    text-align: center;
+    
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active-dot {
+    background-color: #717171;
+}
+@media (max-width: 600px) {
+    .navbar a {
+        padding: 10px 14px;
+    }
+    .caption {
+        bottom: 10px;
+        left: 10px;
+        padding: 5px;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

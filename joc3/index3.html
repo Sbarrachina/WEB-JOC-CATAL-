@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pràctica Oral en Català</title>
+    <link rel="stylesheet" href="/joc3/styles.css">
+</head>
+<body>
+    <header>
+        <h1>el so del Català</h1>
+    
+        <button class="back-button"><a href="/index.html">Tornar a la pàgina principal</a></button>
+
+    </header>
+    
+    
+
+    <section id="jocs">
+        <h2>Jocs per Practicar</h2>
+        <div class="cards">
+            <div class="card" id="cover-card" onclick="openModal('modal1')">
+                <h3>Lectura </h3>
+            </div>
+            <div class="card" id="cover-card3" onclick="openModal('modal3')">
+                <h3>Audio Llibres </h3>
+            </div>
+            <div class="cards">
+                <div class="card"id="cover-card2" onclick="openModal('modal2')">
+                    <h3>Escolta i Escriu </h3>
+                </div>
+            </div>
+            
+        </div>
+
+        
+    </section>
+
+    <section id="paraules">
+        <h2>Treballar les Paraules</h2>
+        <div class="gallery">
+            <div class="image-container">
+                <img src="/joc3/paraules_img/GAT.png" alt="Objecte 1">
+                <input type="text" placeholder="Escriu la paraula..." id="input1">
+                <button onclick="checkImageAnswer('input1', 'object1')">Comprova</button>
+                <p id="object1" class="hidden">Correcte!</p>
+            </div>
+            <div class="image-container">
+                <img src="/joc3/paraules_img/GUITARRA.png" alt="Objecte 2">
+                <input type="text" placeholder="Escriu la paraula..." id="input2">
+                <button onclick="checkImageAnswer('input2', 'object2')">Comprova</button>
+                <p id="object2" class="hidden">Correcte!</p>
+            </div>
+
+            <div class="image-container">
+                <img src="/joc3/paraules_img/JAQUETA.png" alt="Objecte 3">
+                <input type="text" placeholder="Escriu la paraula..." id="input3">
+                <button onclick="checkImageAnswer('input3', 'object3')">Comprova</button>
+                <p id="object3" class="hidden">Correcte!</p>
+            </div>
+            <!-- Afegeix més imatges segons sigui necessari -->
+        </div>
+    </section>
+
+    <!-- Modals -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h2>Text de Lectura 1</h2>
+            <div class="covers">
+                <img src="/joc3/portadas/la porta oberta.png" alt="Portada 1" onclick="showContent('pdf1')">
+                <img src="/joc3/portadas/el regal de reis.png" alt="Portada 2" onclick="showContent('pdf2')">
+                <img src="/joc3/portadas/el collaret.png" alt="Portada 2" onclick="showContent('pdf3')">
+                <img src="/joc3/portadas/la venjança.png" alt="Portada 2" onclick="showContent('pdf4')">
+
+
+            </div>
+            
+            <div id="pdf1" class="content hidden">
+                <embed src="docs/la porta oberta.pdf" type="application/pdf" width="100%" height="600px" />
+            </div>
+
+            <div id="pdf2" class="content hidden">
+                <embed src="docs/el regal de reis.pdf" type="application/pdf" width="100%" height="600px" />
+            </div>
+
+            <div id="pdf3" class="content hidden">
+                <embed src="docs/el collaret.pdf" type="application/pdf" width="100%" height="600px" />
+            </div>
+
+            <div id="pdf4" class="content hidden">
+                <embed src="docs/la venjança.pdf" type="application/pdf" width="100%" height="600px" />
+            </div>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h2>Escolta i Escriu 1</h2>
+            <audio controls>
+                <source src="audio/El_temps_de_les_cireres_master.mp3" type="audio/mpeg">
+                El teu navegador no suporta l'element d'àudio.
+            </audio>
+            <input type="text" id="answer1" placeholder="Escriu la paraula...">
+            <button onclick="checkAnswer('answer1', 'correcte1')">Comprova</button>
+            <p id="correcte1" class="hidden">Correcte!</p>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <h2>Escolta </h2>
+            <div class="covers">
+                <h3>El temps de les Cireres </h3>
+                <img src="https://www.abacus.coop/dw/image/v2/BDLM_PRD/on/demandware.static/-/Sites-AbacusMaster/default/dwed168cfc/images/large/1157010.49.jpg?sw=740" alt="coverbook">
+                <!-- audiollibre.mp3 -->
+                <audio controls>
+                    <source src="/." type="audio/mpeg">
+                    El teu navegador no suporta l'element d'àudio.
+                </audio>
+
+                <h3>El temps de les Cireres </h3>
+                
+                <!-- audiollibre.mp3 -->
+                <audio controls>
+                    <source src="/" type="audio/mpeg">
+                    El teu navegador no suporta l'element d'àudio.
+                </audio>
+
+            </div>
+            
+            
+            <div id="pdf1" class="content hidden">
+                <embed src="docs/la porta oberta.pdf" type="application/pdf" width="100%" height="600px" />
+            </div>
+
+            <div id="pdf2" class="content hidden">
+                <embed src="docs/el regal de reis.pdf" type="application/pdf" width="100%" height="600px" />
+            </div>
+
+            <div id="pdf3" class="content hidden">
+                <embed src="docs/el collaret.pdf" type="application/pdf" width="100%" height="600px" />
+            </div>
+
+            <div id="pdf4" class="content hidden">
+                <embed src="docs/la venjança.pdf" type="application/pdf" width="100%" height="600px" />
+            </div>
+        </div>
+    </div>
+
+    <script src="/joc3/script.js"></script>
+</body>
+</html>
+
