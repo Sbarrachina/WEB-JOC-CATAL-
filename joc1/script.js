@@ -126,6 +126,7 @@ document.addEventListener('DOMContentLoaded', function() {
   function closeModal() {
     modal.style.display = 'none'; // Amaga la finestra modal
   }
+  
 
   // Funció per tancar la finestra modal quan es fa clic fora de la finestra o a la creu
   window.addEventListener('click', function(event) {
