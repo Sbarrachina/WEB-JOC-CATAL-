@@ -14,6 +14,25 @@ function showContent(contentId) {
     document.getElementById(contentId).classList.remove('hidden');
 }
 
+
+// 
+function openCustomModal(modalId) {
+    document.getElementById(modalId).style.display = "block";
+}
+
+function closeCustomModal(modalId) {
+    document.getElementById(modalId).style.display = "none";
+}
+
+function showCustomContent(contentId) {
+    var contents = document.querySelectorAll('.custom-content');
+    contents.forEach(function(content) {
+        content.classList.add('hidden');
+    });
+    document.getElementById(contentId).classList.remove('hidden');
+}
+
+
 document.addEventListener("DOMContentLoaded", function () {
     var correctAnswers = {
         answer1: `Ara que ja tenia setze anys es veia capaç de fer-ho. Havia estat enfonsat durant molt temps, però ara no tenia cap dubte i n'estava ben convençut.

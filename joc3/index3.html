@@ -19,7 +19,7 @@
                 <h3>Lectura</h3>
             </div>
             <div class="card" id="cover-card3" onclick="openModal('modal3')">
-                <h3>Audio Llibres</h3>
+                <h3>Audio Relats</h3>
             </div>
             <div class="cards">
                 <div class="card" id="cover-card2" onclick="openModal('modal2')">
@@ -171,37 +171,37 @@
             </div>
 
             
-
-
             <!-- Afegeix més imatges segons sigui necessari -->
         </div>
     </section>
 
     <!-- Modals -->
-    <div id="modal1" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('modal1')">&times;</span>
-            <h2>Text de Lectura 1</h2>
-            <div class="covers">
-                <img src="/joc3/portadas/la porta oberta.png" alt="Portada 1" onclick="showContent('pdf1')">
-                <img src="/joc3/portadas/el regal de reis.png" alt="Portada 2" onclick="showContent('pdf2')">
-                <img src="/joc3/portadas/el collaret.png" alt="Portada 3" onclick="showContent('pdf3')">
-                <img src="/joc3/portadas/la venjança.png" alt="Portada 4" onclick="showContent('pdf4')">
-            </div>
-            <div id="pdf1" class="content hidden">
-                <embed src="docs/la porta oberta.pdf" type="application/pdf" width="100%" height="600px" />
-            </div>
-            <div id="pdf2" class="content hidden">
-                <embed src="docs/el regal de reis.pdf" type="application/pdf" width="100%" height="600px" />
-            </div>
-            <div id="pdf3" class="content hidden">
-                <embed src="docs/el collaret.pdf" type="application/pdf" width="100%" height="600px" />
-            </div>
-            <div id="pdf4" class="content hidden">
-                <embed src="docs/la venjança.pdf" type="application/pdf" width="100%" height="600px" />
-            </div>
+ <!-- Modals  lectura-->
+<div id="modal1" class="custom-modal">
+    <div class="custom-modal-content">
+        <span class="close" onclick="closeCustomModal('modal1')">&times;</span>
+        <h2>Text de Lectura 1</h2>
+        <div class="custom-covers">
+            <img src="/joc3/portadas/la porta oberta.png" alt="Portada 1" onclick="showCustomContent('pdf1')">
+            <img src="/joc3/portadas/el regal de reis.png" alt="Portada 2" onclick="showCustomContent('pdf2')">
+            <img src="/joc3/portadas/el collaret.png" alt="Portada 3" onclick="showCustomContent('pdf3')">
+            <img src="/joc3/portadas/la venjança.png" alt="Portada 4" onclick="showCustomContent('pdf4')">
+        </div>
+        <div id="pdf1" class="custom-content hidden">
+            <embed src="docs/la porta oberta.pdf" type="application/pdf" width="100%" height="600px" />
+        </div>
+        <div id="pdf2" class="custom-content hidden">
+            <embed src="docs/el regal de reis.pdf" type="application/pdf" width="100%" height="600px" />
+        </div>
+        <div id="pdf3" class="custom-content hidden">
+            <embed src="docs/el collaret.pdf" type="application/pdf" width="100%" height="600px" />
+        </div>
+        <div id="pdf4" class="custom-content hidden">
+            <embed src="docs/la venjança.pdf" type="application/pdf" width="100%" height="600px" />
         </div>
     </div>
+</div>
+
 
     <div id="modal2" class="modal">
         <div class="modal-content">
@@ -275,13 +275,27 @@
             <span class="close" onclick="closeModal('modal3')">&times;</span>
             <h2>Escolta</h2>
             <div class="covers">
-                <h3>El temps de les Cireres</h3>
-                <img src="https://www.abacus.coop/dw/image/v2/BDLM_PRD/on/demandware.static/-/Sites-AbacusMaster/default/dwed168cfc/images/large/1157010.49.jpg?sw=740" alt="coverbook">
+                <h3>L'amic Saturnino</h3>
+                <img src="/joc3/portadas/saturnino.png" alt="coverbook">
                 <audio controls>
-                    <source src="/joc3/audio/audiollibre.mp3" type="audio/mpeg">
+                    <source src="/joc3/audio/relats/l_amic-Saturnino.mp3" type="audio/mpeg">
                     El teu navegador no suporta l'element d'àudio.
                 </audio>
             </div>
+
+<!--  -->
+<div class="covers">
+    <h3>El misteri del rellotge encantat</h3>
+    <img src="/joc3/portadas/rellotje.png" alt="Portada de l'audio 2">
+    <audio controls>
+        <source src="/joc3/audio/relats/el misteri d el rellotge.mp3" type="audio/mpeg">
+        El teu navegador no suporta l'element d'àudio.
+    </audio>
+</div>
+
+
+<!-- fi -->
+
         </div>
     </div>
 
