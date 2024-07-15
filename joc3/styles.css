@@ -123,6 +123,7 @@ section {
                   1px -1px 0 white,
                  -1px  1px 0 white,
                   1px  1px 0 white; /* Vora blanca al text */
+
     
 }
 
@@ -332,10 +333,18 @@ textarea {
     padding: 20px;
     font-size:20px;
     box-sizing: border-box;
+    text-transform: none; /* Assegura que cap transformació de text està aplicada */
+
 }
 
 .dictation{
 padding: 10px;
+
+text-transform: none; /* Assegura que cap transformació de text està aplicada */
+    /* Altres estils opcionals per als paràgrafs de comprovació */
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
 
 }
 
@@ -409,4 +418,7 @@ audio{
 
 .hidden {
     display: none;
+
 }
+
+
