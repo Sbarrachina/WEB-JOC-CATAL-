@@ -6,53 +6,62 @@ body {
     background-size: cover;
     color: #fff;
 }
+
 .navbar {
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.7);
-    padding: 10px; /* Espaiat interior de la barra de navegació */
+    padding: 10px;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
-    gap: 8px; /* Espacio entre elementos */
 }
 
 .navbar a {
     color: white;
-    padding: 20px 8px; /* Modificar padding vertical y horizontal */
+    padding: 20px 8px;
     transition: background-color 0.3s ease, color 0.3s ease;
     text-transform: uppercase;
     font-size: 20px;
     text-decoration: none;
 }
 
-
 .navbar a:hover {
-    color: rgb(232, 21, 21); /* Color del text al fer hover */
+    color: rgb(232, 21, 21);
 }
+
+.icon {
+    display: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
 .slider-container {
     position: relative;
     max-width: 900px;
-    margin:0  auto;
+    margin: 0 auto;
     overflow: hidden;
     padding: 80px;
-    
-   
 }
+
 .slider {
     display: flex;
     transition: transform 1s ease;
 }
+
 .slides {
     min-width: 100%;
     box-sizing: border-box;
 }
+
 .slider img {
     width: 100%;
     height: auto;
 }
+
 .caption {
     position: absolute;
     bottom: 20px;
@@ -60,17 +69,19 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
 }
+
 .caption a {
     color: #fff;
     text-decoration: none;
 }
+
 .navigation {
     position: absolute;
     width: 90%;
     bottom: 25px;
     text-align: center;
-    
 }
+
 .dot {
     cursor: pointer;
     height: 15px;
@@ -81,26 +92,41 @@ body {
     display: inline-block;
     transition: background-color 0.6s ease;
 }
+
 .active-dot {
     background-color: #717171;
 }
-@media (max-width: 600px) {
-    .navbar a {
-        padding: 10px 14px;
-    }
-    .caption {
-        bottom: 10px;
-        left: 10px;
-        padding: 5px;
-    }
-}
 
 footer {
-    background-color: #333;
     color: #fff;
     text-align: center;
     padding: 20px 0;
     position: fixed;
     width: 100%;
     bottom: 0;
+    text-transform: uppercase;
+    font-size: 20px;
+    
+}
+
+@media (max-width: 768px) {
+    .navbar a:not(:first-child) {
+        display: none;
+    }
+
+    .navbar a.icon {
+        display: block;
+    }
+
+    .navbar.responsive {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar.responsive a {
+        display: block;
+        text-align: left;
+        width: 100%;
+        padding: 10px;
+    }
 }

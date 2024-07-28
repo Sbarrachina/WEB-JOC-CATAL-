@@ -22,6 +22,44 @@
   </div>
 </div>
 
+<!--  SOPA DE LLETRES -->
+
+<section class="body2">
+
+  <div id="game-container">
+    <h1 class="h1">Sopa de Lletres en Català</h1>
+    <div id="controls">
+        <label for="difficulty">Dificultat:</label>
+        <select id="difficulty">
+            <option value="easy">Fàcil</option>
+            <option value="medium">Mitjà</option>
+            <option value="hard">Difícil</option>
+        </select>
+        <label for="category"></label>
+        <select id="category">
+            <option value="animals">Paraules</option>
+        </select>
+        <button id="start-game">Iniciar Joc</button>
+    </div>
+    <div id="game-board">
+        <div id="word-list">
+            <h2>Paraules a Trobar</h2>
+            <ul id="words"></ul>
+        </div>
+        <div id="grid"></div>
+    </div>
+    <div id="score-board">
+        <p>Temps: <span id="timer">00:00</span></p>
+        <p>Puntuació: <span id="score">0</span></p>
+    </div>
+</div>
+
+
+</section>
+
+
+
   <script src="/joc1/script.js"></script>
+  <script src="sopa.js"></script>
 </body>
 </html>
