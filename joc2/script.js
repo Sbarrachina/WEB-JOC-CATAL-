@@ -91,7 +91,7 @@ const words = [
     hangmanDisplay.innerHTML = `
       Intents restants: ${guessesLeft}
       <br><br>
-      <img src="https://www.joguinessomnis.cat/24592-product_zoom/joc-del-penjat.jpg" alt="Penjat">
+      <img src="https://play-lh.googleusercontent.com/EWFophPNX2dUpx1Zw_MF4t_-nBxGJcXmmUAsmI9WYjLCZot_-xsIJrbfh5gtRO9H_A=w600-h300-pc0xffffff-pd" alt="Penjat">
     `;
   }
   
